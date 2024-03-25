@@ -1,4 +1,4 @@
-export interface IHomeVideos {
+export interface IVideos {
   id: string;
   title: string;
   video_image: string;

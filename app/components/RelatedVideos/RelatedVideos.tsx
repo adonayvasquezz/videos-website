@@ -1,20 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
-import { home_videos } from "@/app/lib/placeholder-data";
+import { IVideos } from "@/interfaces";
 
-export const HomeVideos = async () => {
-  const { props } = await getHomeVideos();
+interface Props {
+  videos: IVideos[];
+}
+export const RelatedVideos = ({ videos }: Props) => {
   return (
-    <div className="m-auto">
-      <h1>Top videos website</h1>
+    <div className="mt-4">
+      <h3 className="p-2 text-lg">Related Videos</h3>
       <div className="flex flex-wrap justify-between">
-        {props.videos.map((video) => (
+        {videos.map((video) => (
           <div
             key={video.id}
-            className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 my-2 px-2"
+            className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 my-2 px-2 py-2"
           >
             <Link href={`/video/${video.embed_code}`}>
-              <div className="block relative w-full h-[11rem]">
+              <div className="block relative w-full h-[8rem]">
                 <Image
                   src={video.video_image}
                   fill
@@ -25,7 +27,7 @@ export const HomeVideos = async () => {
                 />
               </div>
 
-              <div className="m-2 overflow-hidden line-clamp-2">
+              <div className="mt-1 overflow-hidden line-clamp-2 text-sm text-gray-300">
                 {video.title}
               </div>
             </Link>
@@ -35,14 +37,3 @@ export const HomeVideos = async () => {
     </div>
   );
 };
-
-async function getHomeVideos() {
-  // Fetch data from API
-
-  const videos = home_videos;
-  return {
-    props: {
-      videos,
-    },
-  };
-}

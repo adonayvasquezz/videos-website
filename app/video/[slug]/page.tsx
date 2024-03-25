@@ -1,4 +1,6 @@
+import { RelatedVideos } from "@/app/components";
 import { EMBED_BASE_URL } from "@/app/lib/constants";
+import { home_videos } from "@/app/lib/placeholder-data";
 
 export default function Page({ params }: { params: { slug: string } }) {
   return (
@@ -10,6 +12,8 @@ export default function Page({ params }: { params: { slug: string } }) {
           allowFullScreen
         />
       </div>
+
+      <RelatedVideos videos={home_videos} />
     </>
   );
 }

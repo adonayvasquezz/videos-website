@@ -1,6 +1,6 @@
-import { IHomeVideos } from "@/interfaces";
+import { IVideos } from "@/interfaces";
 
-export const home_videos: IHomeVideos[] = [
+export const home_videos: IVideos[] = [
   {
     id: "1",
     title:
