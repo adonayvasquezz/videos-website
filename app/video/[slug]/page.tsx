@@ -3,7 +3,10 @@ import { EMBED_BASE_URL } from "@/app/lib/constants";
 import { fetchVideoDetail } from "@/app/lib/data";
 import { home_videos } from "@/app/lib/placeholder-data";
 
-export default async function Page({ params }: { params: { slug: string } }) {
+interface Props {
+  params: { slug: string };
+}
+export default async function Page({ params }: Props) {
   const videoInfo = await fetchVideoDetail(params.slug);
   const tags = videoInfo.data?.tags ? videoInfo.data?.tags : [];
 

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface Props {
   tags: string[];
 }
@@ -11,7 +13,7 @@ export const VideoTags = ({ tags }: Props) => {
             key={`${tag}-${idx}`}
             className="bg-blue-900 mr-4 rounded-lg p-1 cursor-pointer hover:bg-gray-800"
           >
-            {tag}
+            <Link href={`/tags/${tag}`}>{tag}</Link>
           </span>
         ))}
     </div>
