@@ -9,6 +9,7 @@ export const home_videos: IVideos[] = [
       "https://i.ytimg.com/vi/1W-ibAa76Dc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAbl6BGBwwuwMlFWtrfVHrEbPBqCA",
 
     embed_code: "1W-ibAa76Dc",
+    tags: ["EE. UU.", "TikTok", "ley"],
   },
   {
     id: "2",
@@ -18,6 +19,7 @@ export const home_videos: IVideos[] = [
       "https://i.ytimg.com/vi/qP6rBL1MmtE/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBzFeNLQ221iZpcXzMFGdkZUedo1Q",
 
     embed_code: "qP6rBL1MmtE",
+    tags: ["votantes", "latinos", "EE.UU.", "presidenciales"],
   },
   {
     id: "3",
@@ -26,6 +28,7 @@ export const home_videos: IVideos[] = [
       "https://i.ytimg.com/vi/FZHNcJ75mgU/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDc6bi0Iuw0cjpj2GyaLhlmQ7GpAw",
 
     embed_code: "FZHNcJ75mgU",
+    tags: ["Claude 3", "ChatGPT", "IA"],
   },
   {
     id: "4",
@@ -35,6 +38,7 @@ export const home_videos: IVideos[] = [
       "https://i.ytimg.com/vi/1W-ibAa76Dc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAbl6BGBwwuwMlFWtrfVHrEbPBqCA",
 
     embed_code: "1W-ibAa76Dc",
+    tags: ["EE. UU.", "TikTok", "ley"],
   },
   {
     id: "5",
@@ -44,6 +48,7 @@ export const home_videos: IVideos[] = [
       "https://i.ytimg.com/vi/qP6rBL1MmtE/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBzFeNLQ221iZpcXzMFGdkZUedo1Q",
 
     embed_code: "qP6rBL1MmtE",
+    tags: ["votantes", "latinos", "EE.UU.", "presidenciales"],
   },
   {
     id: "6",
@@ -52,6 +57,7 @@ export const home_videos: IVideos[] = [
       "https://i.ytimg.com/vi/FZHNcJ75mgU/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDc6bi0Iuw0cjpj2GyaLhlmQ7GpAw",
 
     embed_code: "FZHNcJ75mgU",
+    tags: ["Claude 3", "ChatGPT", "IA"],
   },
 
   {
@@ -62,6 +68,7 @@ export const home_videos: IVideos[] = [
       "https://i.ytimg.com/vi/1W-ibAa76Dc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAbl6BGBwwuwMlFWtrfVHrEbPBqCA",
 
     embed_code: "1W-ibAa76Dc",
+    tags: ["EE. UU.", "TikTok", "ley"],
   },
   {
     id: "8",
@@ -71,6 +78,7 @@ export const home_videos: IVideos[] = [
       "https://i.ytimg.com/vi/qP6rBL1MmtE/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBzFeNLQ221iZpcXzMFGdkZUedo1Q",
 
     embed_code: "qP6rBL1MmtE",
+    tags: ["votantes", "latinos", "EE.UU.", "presidenciales"],
   },
   {
     id: "9",
@@ -79,6 +87,7 @@ export const home_videos: IVideos[] = [
       "https://i.ytimg.com/vi/FZHNcJ75mgU/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDc6bi0Iuw0cjpj2GyaLhlmQ7GpAw",
 
     embed_code: "FZHNcJ75mgU",
+    tags: ["Claude 3", "ChatGPT", "IA"],
   },
   {
     id: "10",
@@ -88,6 +97,7 @@ export const home_videos: IVideos[] = [
       "https://i.ytimg.com/vi/1W-ibAa76Dc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAbl6BGBwwuwMlFWtrfVHrEbPBqCA",
 
     embed_code: "1W-ibAa76Dc",
+    tags: ["EE. UU.", "TikTok", "ley"],
   },
   {
     id: "11",
@@ -97,6 +107,7 @@ export const home_videos: IVideos[] = [
       "https://i.ytimg.com/vi/qP6rBL1MmtE/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBzFeNLQ221iZpcXzMFGdkZUedo1Q",
 
     embed_code: "qP6rBL1MmtE",
+    tags: ["votantes", "latinos", "EE.UU.", "presidenciales"],
   },
   {
     id: "12",
