@@ -3,6 +3,13 @@ import { EMBED_BASE_URL } from "@/app/lib/constants";
 import { fetchVideoDetail } from "@/app/lib/data";
 import { home_videos } from "@/app/lib/placeholder-data";
 
+export async function generateMetadata({ params }: Props) {
+  return {
+    title: `Video ${params.slug}`,
+    description: `Video about ${params.slug}`,
+  };
+}
+
 interface Props {
   params: { slug: string };
 }
