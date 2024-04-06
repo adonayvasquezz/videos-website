@@ -13,7 +13,10 @@ export const HomeVideos = async () => {
             key={video.id}
             className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 my-2 px-2"
           >
-            <Link href={`/video/${video.embed_code}`}>
+            <Link
+              href={`/video/${video.embed_code}`}
+              className="hover:opacity-90"
+            >
               <div className="block relative w-full h-[11rem]">
                 <Image
                   src={video.video_image}
@@ -25,7 +28,7 @@ export const HomeVideos = async () => {
                 />
               </div>
 
-              <div className="m-2 overflow-hidden line-clamp-2">
+              <div className="m-2 overflow-hidden line-clamp-2 hover:text-blue-400">
                 {video.title}
               </div>
             </Link>

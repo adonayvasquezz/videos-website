@@ -13,9 +13,12 @@ export const RelatedVideos = ({ videos }: Props) => {
         {videos.map((video) => (
           <div
             key={video.id}
-            className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 my-2 px-2 py-2"
+            className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 my-2 px-2 py-2 "
           >
-            <Link href={`/video/${video.embed_code}`}>
+            <Link
+              href={`/video/${video.embed_code}`}
+              className="hover:opacity-90"
+            >
               <div className="block relative w-full h-[8rem]">
                 <Image
                   src={video.video_image}
@@ -27,7 +30,7 @@ export const RelatedVideos = ({ videos }: Props) => {
                 />
               </div>
 
-              <div className="mt-1 overflow-hidden line-clamp-2 text-sm text-gray-300">
+              <div className="mt-1 overflow-hidden line-clamp-2 text-sm text-gray-300 hover:text-blue-400">
                 {video.title}
               </div>
             </Link>
