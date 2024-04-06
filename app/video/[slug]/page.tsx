@@ -4,9 +4,18 @@ import { fetchVideoDetail } from "@/app/lib/data";
 import { home_videos } from "@/app/lib/placeholder-data";
 
 export async function generateMetadata({ params }: Props) {
+  const videoInfo = await fetchVideoDetail(params.slug);
+  const tags = videoInfo.data?.tags
+    ? videoInfo.data?.tags
+    : ["videos website", "trending videos"];
+
   return {
     title: `Video ${params.slug}`,
     description: `Video about ${params.slug}`,
+    keywords: tags,
+    openGraph: {
+      images: videoInfo.data?.video_image || "/og-image.png",
+    },
   };
 }
 
