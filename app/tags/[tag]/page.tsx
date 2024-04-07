@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: Props) {
   return {
     title: `Tag ${params.tag}`,
     description: `Video tag ${params.tag}`,
-    keywords: [params.tag, "videos website", "trending videos"],
+    keywords: [params.tag, "videos web", "trending videos"],
   };
 }
 export default async function Page({ params }: Props) {

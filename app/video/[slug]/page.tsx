@@ -7,7 +7,7 @@ export async function generateMetadata({ params }: Props) {
   const videoInfo = await fetchVideoDetail(params.slug);
   const tags = videoInfo.data?.tags
     ? videoInfo.data?.tags
-    : ["videos website", "trending videos"];
+    : ["videos web", "trending videos"];
 
   return {
     title: `Video ${params.slug}`,

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { HomeVideos } from "./components";
 
 export const metadata: Metadata = {
-  title: "Videos Website",
+  title: "Videos Web",
   description: "Home best videos",
 };
 

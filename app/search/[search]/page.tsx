@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: Props) {
   return {
     title: `Search ${params.search}`,
     description: `Video Search ${params.search}`,
-    keywords: [...searchSplit, "videos website", "trending videos"],
+    keywords: [...searchSplit, "videos web", "trending videos"],
   };
 }
 export default async function Page({ params }: Props) {

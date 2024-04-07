@@ -6,7 +6,7 @@ export const HomeVideos = async () => {
   const { props } = await getHomeVideos();
   return (
     <div className="mx-auto pt-12">
-      <h1 className="pl-4">Top videos website</h1>
+      <h1 className="pl-4">Top videos web</h1>
       <div className="flex flex-wrap justify-between mt-6">
         {props.videos.map((video) => (
           <div
