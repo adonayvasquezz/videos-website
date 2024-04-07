@@ -1,3 +1,3 @@
 export * from "./HomeVideos/HomeVideos";
-export * from "./RelatedVideos/RelatedVideos";
+export * from "./VideosComponent/VideosComponent";
 export * from "./VideoTags/VideoTags";

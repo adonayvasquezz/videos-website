@@ -1,4 +1,4 @@
-import { RelatedVideos, VideoTags } from "@/app/components";
+import { VideosComponent, VideoTags } from "@/app/components";
 import { EMBED_BASE_URL } from "@/app/lib/constants";
 import { fetchVideoDetail } from "@/app/lib/data";
 import { home_videos } from "@/app/lib/placeholder-data";
@@ -37,7 +37,10 @@ export default async function Page({ params }: Props) {
       </div>
       <h1 className="mt-3 px-2 text-2xl">{videoInfo.data?.title}</h1>
       <VideoTags tags={tags} />
-      <RelatedVideos videos={home_videos} />
+      <div className="mt-4">
+        <h3 className="p-2 text-lg">Related videos</h3>
+        <VideosComponent videos={home_videos} />
+      </div>
     </div>
   );
 }
