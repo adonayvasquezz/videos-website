@@ -35,7 +35,9 @@ export default async function Page({ params }: Props) {
           allowFullScreen
         />
       </div>
-      <h1 className="mt-3 px-2 text-2xl">{videoInfo.data?.title}</h1>
+      <h1 className="md:mt-4 px-2 font-bold text-lg md:text-xl">
+        {videoInfo.data?.title}
+      </h1>
       <VideoTags tags={tags} />
       <div className="mt-4">
         <h3 className="p-2 text-lg">Related videos</h3>
