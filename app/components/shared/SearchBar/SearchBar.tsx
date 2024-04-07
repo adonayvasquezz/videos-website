@@ -18,7 +18,7 @@ export const SearchBar = () => {
   };
 
   return (
-    <div className="bg-slate-400 w-3/4 md:w-1/3 mt-2 flex">
+    <div className="w-3/4 md:w-1/3 flex">
       <input
         className="w-full px-2 text-black"
         value={searchParam}
