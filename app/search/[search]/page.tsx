@@ -15,13 +15,15 @@ export async function generateMetadata({ params }: Props) {
 }
 export default async function Page({ params }: Props) {
   const { props } = await getSearchVideos();
+  const phraseSearched = params.search.replaceAll("%20", " ");
+
   const searchedVideos = props.videos.filter((videos) =>
-    videos.title.includes(params.search)
+    videos.title.includes(phraseSearched)
   );
 
   return (
     <div className="pt-12">
-      <h1 className="text-xl mb-4">Search is {params.search}</h1>
+      <h1 className="text-xl mb-4">Search is {phraseSearched}</h1>
       {searchedVideos.length ? (
         <VideosComponent videos={searchedVideos} />
       ) : (
